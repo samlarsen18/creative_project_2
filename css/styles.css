@@ -41,6 +41,7 @@ h2 {
   font-size: 45px;
   padding: 10px;
   text-align: center;
+  margin: 30px;
 }
 
 h3 {
@@ -143,13 +144,16 @@ h4 {
 .beta_body img {
   display: inline;
   margin: 50px;
-  transform: rotate(90deg);
   height: 500px;
   width: 650px;
 }
 
 #no_rotate {
   transform: rotate(0deg);
+}
+
+#rotate {
+  transform: rotate(90deg);
 }
 
 /*********** Footer ************/
@@ -168,4 +172,12 @@ h4 {
 
 .footer a {
   color: black;
+}
+
+/************** Map ***************/
+#map {
+  margin-top: 30px;
+  width: 75%;
+  height: 400px;
+  background-color: grey;
 }
