@@ -1,0 +1,171 @@
+body {
+  /*background-image: url("/images/canyon_bg.jpg");
+  /*NEED BACKGROUND*/
+  background-color: #F7FFF5;
+  background-size: cover;
+}
+
+header {
+  align-items: center;
+  border-bottom: black solid 3px;
+}
+
+.image {
+  background-image: url("/images/lone_cairn2.jpg");
+  background-color: white;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  padding: 50px;
+  padding-top: 35px;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  font-size: 2.8em;
+}
+
+h2 {
+  color: black;
+  font-family: inherit;
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  font-family: inherit;
+  padding: 10px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.home_body h4 {
+  color: black;
+  font-family: inherit;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px black;
+  display: inline;
+}
+
+.home_body {
+  margin: 100px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-link {
+  font-size: large !important;
+  border-right: solid black;
+  margin: 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******** Beta Buttons *********/
+.canyons {
+  margin: 100px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 40%;
+  padding: 0 4px;
+}
+
+.canyon_icon {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.canyon_icon img {
+  transform: rotate(90deg);
+  height: 400px;
+  width: 500px;
+  vertical-align: middle;
+}
+
+.canyon_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  border: solid white;
+  padding: 4px;
+}
+
+/*********** Beta ************/
+.beta_body {
+  display: flex;
+  margin: 60px;
+  margin-top: 40px;
+}
+
+.side_image {
+  flex: 1;
+  float: right;
+}
+
+.main_text {
+  flex: 3;
+  text-align: left;
+}
+
+.beta_body img {
+  display: inline;
+  margin: 50px;
+  transform: rotate(90deg);
+  height: 500px;
+  width: 650px;
+}
+
+#no_rotate {
+  transform: rotate(0deg);
+}
+
+/*********** Footer ************/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+#stubbornFooter {
+  position: relative;
+}
+
+.footer a {
+  color: black;
+}
