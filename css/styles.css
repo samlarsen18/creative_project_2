@@ -132,20 +132,22 @@ h4 {
 }
 
 .side_image {
-  flex: 1;
+  flex-shrink: 1;
   float: right;
 }
 
 .main_text {
-  flex: 3;
+  flex: 4;
   text-align: left;
 }
 
 .beta_body img {
-  display: inline;
+  float: left;
   margin: 50px;
-  height: 500px;
-  width: 650px;
+  width: auto;
+  height: auto;
+  max-height: 500px;
+  max-width: 650px;
 }
 
 #no_rotate {
@@ -177,7 +179,7 @@ h4 {
 /************** Map ***************/
 #map {
   margin-top: 30px;
-  width: 75%;
+  width: 90%;
   height: 400px;
   background-color: grey;
 }

@@ -38,14 +38,18 @@
       <img src="/images/huntress.jpg" id="rotate">
     </div>
     <div class="main_text">
-      <h4>Location</h4>
-      <h5>Mt Carmel Utah. Off the road south to Kanab</h5>
-      <div id="map" class="map"></div>
       <h4>Description</h4>
       <h5>Super beginner friendly canyon. There are 8-9 rappels with the largest being around
         75 feet. No water. Can get pretty hot in the summer. Commercially guided. Also goes by the name Diana's Throne</h5>
+
+      <h4>Location</h4>
+      <h5>Mt Carmel Utah. Off the road south to Kanab</h5>
+      <div id="map"></div>
       <h4>Conditions</h4>
       <h5>Almost always dry. Can have pools of water during monsoon season.</h5>
+      <h4>Current Weather Courtesy of DarkSky</h4>
+      <h5 id="weather"> </h5>
+
     </div>
 
 
@@ -60,14 +64,15 @@
 
 
   <div class="footer" id=stubbornFooter>
-    <a href="https://github.com/samlarsen18/creative_project_1">
+    <a href="https://github.com/samlarsen18/creative_project_2">
       - GitHub Repository -<a>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script text="type/javascript" src="/maps.js">
-  </script>
+  <script text="type/javascript" src="/maps.js"> </script>
+  <script text="type/javascript" src="/weather.js"></script>
+
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDesTXxLbejdLAtxc240ocJ7BWvlgUEsDc&callback=initMap">
   </script>
 </body>

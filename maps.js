@@ -12,12 +12,13 @@ function initMap() {
   // The map, centered at location
   var map = new google.maps.Map(
     document.getElementById('map'), {
-      zoom: 13,
+      zoom: 14,
       center: location,
       mapTypeId: 'terrain',
       disableDefaultUI: true,
       mapTypeControl: true
     });
+
   console.log(map);
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({
