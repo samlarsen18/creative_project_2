@@ -142,12 +142,10 @@ h4 {
 }
 
 .beta_body img {
-  float: left;
+  display: inline;
   margin: 50px;
-  width: auto;
-  height: auto;
-  max-height: 500px;
-  max-width: 650px;
+  height: 500px;
+  width: 650px;
 }
 
 #no_rotate {

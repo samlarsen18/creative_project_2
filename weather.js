@@ -7,8 +7,26 @@ fetch(url2)
     return response.json();
   }).then(function(json) {
     console.log(json);
-    console.log(json.daily.data[0].summary);
-    document.getElementById('weather').innerHTML = (json.daily.data[0].summary);
-    var longitude = parseFloat(document.getElementById('lng').innerHTML);
+    let result = "";
+    let totalRain = 0.0;
+    for (let i = 0; i < 3; i++) {
+      totalRain += json.daily.data[i].precipProbability;
+      console.log(totalRain);
+    }
+    result += json.hourly.summary;
+    console.log(totalRain);
+
+    let floodProbability = "";
+    if (totalRain >= 2) {
+      floodProbability = "<h5 style=\"color:red; display:inline;\"> HIGH</h5></h5>";
+    } else if (totalRain > 1) {
+      floodProbability = "<h5 style=\"color:orange; display:inline;\"> MODERATE</h5>";
+    } else {
+      floodProbability = "<h5 style=\"color:yellow; display:inline;\"> LOW</h5>";
+    }
+    result += "<h5><h5 style=\"display:inline;\"> Flash Flood probability: " + floodProbability + "</h5>";
+    result += "<h5>Chance of rain the next 3 days: " + parseFloat((totalRain / 3) * 100).toFixed(2) + "%</h5>";
+    //result += floodProbability;
+    document.getElementById('weather').innerHTML = result;
 
   });
